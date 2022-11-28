@@ -1,0 +1,251 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color:#C9E4C5 ;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  li,
+  button,
+  label,
+  input,
+  a,
+  p {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5ren;
+  }
+  h4,
+  h5 {
+    font-size: 2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #2c2c2c;
+  }
+/* Nav Section   */
+
+.main-head{
+    min-height: 10vh;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #B5CDA3;
+}
+nav .logo{
+    flex: 1 1 20rem;
+    margin: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo h2{
+    font-family: 'Square Peg', cursive;
+    font-size: 3.3rem;
+    font-weight:bold;
+    margin-left: 2rem;
+}
+nav ul{
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.hover{
+    color: #2c2c2c;
+}
+.hover:hover{
+    color: #2c2c2c;
+    background-color: #C6EBC5;
+    border-radius: 1.5rem;
+    padding: 0.7rem;
+    
+}
+
+
+/* Intro section */
+
+#intro {
+    min-height: 90vh;
+  
+} 
+#intro h2 {
+      font-size: 8rem;
+      padding-top: 2rem;
+      text-align: center;
+      padding-top: 9rem;
+      font-family: 'Sacramento', cursive;
+    }
+#intro h3 {
+      font-size: 3.5rem;
+      padding: 2rem 0rem;
+      text-align: center;
+      font-weight: lighter;
+    }
+.intro-text p{
+  font-family: 'Square Peg', cursive;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0rem 5rem 0rem;
+}
+.intro-social{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.intro-social a{
+    margin: 2.2rem;
+}
+.intro-social img{
+  height: 5rem;
+  width: 5rem;
+}
+@media screen and (max-width:622px){
+    .logo, .foot-name{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+}
+
+/* Projects Section */
+
+#projects{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    color:#2c2c2c;
+}
+
+.travelly,.elena{
+    flex: 1 1 40rem;
+}
+
+.travelly img{
+    height: 40rem;
+    width: 45rem;
+    background-size: cover;   
+    border-radius: 8%;
+}
+.travelly h2{
+    font-size: 5rem;
+    font-family: 'Sacramento', cursive;
+    padding-bottom: 2.5rem;   
+}
+
+/* Resume section */
+
+#resume_mail{
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+.contact-mail ,a{
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+}
+.contact-mail a{
+  font-weight: 550;
+}
+.underline{
+  display: inline-block;
+  position: relative;
+  cursor:pointer;
+}
+.underline::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+#232627;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Footer section */
+
+footer{
+  min-height: 10vh;
+  background-color: #B5CDA3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+.foot-name{
+  flex: 1 1 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+footer ul{
+  flex: 1 1 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links{
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.link2{
+  height: 4rem;
+  width: 4rem;
+}
+
+.foot-name h4{
+    font-family: 'Square Peg', cursive;
+    font-size: 3.3rem;
+    font-weight:bold;
+    margin-left: 2rem;
+    color:#2c2c2c;
+}
